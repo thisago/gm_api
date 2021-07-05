@@ -2,7 +2,7 @@
 
 version       = "0.1.0"
 author        = "Thiago Navarro"
-description   = "Bindings for Greasemonkey API"
+description   = "Bindings for Greasemonkey API and header generator"
 license       = "MIT"
 srcDir        = "src"
 
