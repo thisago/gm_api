@@ -1,6 +1,6 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 07/05/2021 06:12:58 PM Monday
+  Modified at: 07/05/2021 06:42:58 PM Monday
 -->
 
 # GM_api
@@ -25,6 +25,22 @@ Avaliable functions:
 - GM.registerMenuCommand
 - GM.setClipboard
 - GM.xmlHttpRequest
+
+## Installation
+
+Automatically with nimble:
+```bash
+nimble install https://gitea.com/thisago/gm_api
+```
+
+or
+
+Manually:
+```bash
+git clone https://gitea.com/thisago/gm_api
+cd gm_api/
+nimble install
+```
 
 ## License
 
