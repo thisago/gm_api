@@ -1,9 +1,28 @@
 <!--
   Created at: 07/04/2021 13:25:27 Sunday
-  Modified at: 07/04/2021 01:26:43 PM Sunday
+  Modified at: 07/04/2021 11:53:58 PM Sunday
 -->
 
 # Changelog
+
+# Version 0.2.0 (07/04/2021 23:53:58 Sunday)
+
+- Moved all metadata related to new file
+- Misspelling fix in `pt-br` description
+- Added `std` prefix on standard modules imports
+- Fix `GM.xmlHttpRequest` char case error
+- Added functions:
+  - getValue
+  - setValue
+  - deleteValue
+  - listValues
+  - notification
+  - openInTab
+  - registerMenuCommand
+  - setClipboard
+  - xmlHttpRequest
+
+--
 
 # Version 0.1.0 (07/04/2021 13:25:46 Sunday)
 
