@@ -1,6 +1,6 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 07/04/2021 11:55:34 PM Sunday
+  Modified at: 07/04/2021 11:58:24 PM Sunday
 -->
 
 # GM_api
@@ -11,7 +11,11 @@ Bindings to use GM api and create userscript headers on the fly
 
 Version 0.2.0
 
+
+
 Avaliable functions:
+
+- genMetadataBlock
 
 - GM.info - Not working to me
 - GM.getValue
