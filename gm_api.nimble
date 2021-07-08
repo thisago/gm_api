@@ -16,4 +16,4 @@ task buildExample, "Builds the example":
   exec "nim js ./example/main.nim"
 
 task buildExample_release, "Builds the example in release":
-  exec "nim js -d:release ./example/main.nim"
+  exec "nim js -d:danger ./example/main.nim"

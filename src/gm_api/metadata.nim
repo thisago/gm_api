@@ -1,6 +1,6 @@
 #[
   Created at: 07/04/2021 13:35:37 Sunday
-  Modified at: 07/04/2021 11:52:21 PM Sunday
+  Modified at: 07/08/2021 03:30:05 PM Thursday
 ]#
 
 
@@ -57,7 +57,7 @@ proc genMetadataBlock*(
   # project
   name: string;                                              ## Required *
   nameTranslations: openArray[(string, string)] = [];        ## Optional
-  namespace = "Violentmonkey Scripts";                       ## Optional
+  namespace = "https://gitea.com/thisago/gm_api";                                   ## Optional
   description = "New Nim userscript";                        ## Optional
   descriptionTranslations: openArray[(string, string)] = []; ## Optional
   version = "1.0.0";                                         ## Optional
@@ -124,4 +124,4 @@ proc genMetadataBlock*(
   result = fmt"""// ==UserScript==
                {metadatas.join("\n")}
                // ==/UserScript==
-               // Metadata automatically generated""".unindent
+               // Metadata automatically generated with https://gitea.com/thisago/gm_api""".unindent

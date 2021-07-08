@@ -1,6 +1,6 @@
 #[
   Created at: 07/04/2021 10:58:31 Sunday
-  Modified at: 07/04/2021 11:50:45 PM Sunday
+  Modified at: 07/08/2021 03:27:52 PM Thursday
 ]#
 
 ##[
@@ -97,8 +97,6 @@ proc notification*(gm: GmType; text: cstring; title, image = "".cstring;
 
 type GmHttpResponse = concept x
   x(newJsObject())
-
-proc push(obj: JsObject, val: JsObject) {.importcpp.}
 
 proc xmlHttpRequest_placeholderCallback(x: JsObject) = discard
 proc xmlHttpRequest*(gm: GmType; url, `method`: cstring;
