@@ -1,6 +1,6 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 07/05/2021 06:42:58 PM Monday
+  Modified at: 07/08/2021 03:34:16 PM Thursday
 -->
 
 # GM_api
@@ -28,19 +28,25 @@ Avaliable functions:
 
 ## Installation
 
-Automatically with nimble:
-```bash
-nimble install https://gitea.com/thisago/gm_api
-```
+Please choice one installation method:
 
-or
+- Automatically with nimble
+  ```bash
+  nimble install gm_api
+  ```
+  or
+  ```bash
+  nimble install https://gitea.com/thisago/gm_api
+  ```
 
-Manually:
-```bash
-git clone https://gitea.com/thisago/gm_api
-cd gm_api/
-nimble install
-```
+Or
+
+- Manually
+  ```bash
+  git clone https://gitea.com/thisago/gm_api
+  cd gm_api/
+  nimble install
+  ```
 
 ## License
 
