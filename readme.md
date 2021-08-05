@@ -1,6 +1,6 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 07/08/2021 03:34:16 PM Thursday
+  Modified at: 08/05/2021 01:37:42 PM Thursday
 -->
 
 # GM_api
@@ -47,6 +47,10 @@ Or
   cd gm_api/
   nimble install
   ```
+
+## Projects using it
+
+- [safeWriting](https://github.com/thisago/safeWriting)
 
 ## License
 
