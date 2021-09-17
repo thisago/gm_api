@@ -1,6 +1,6 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 09/17/2021 01:15:59 AM Friday
+  Modified at: 09/17/2021 01:17:45 AM Friday
 
         Copyright (C) 2021 Thiago Navarro
   See file "license" for details about copyright
@@ -48,6 +48,10 @@ Or
   cd gm_api/
   nimble install
   ```
+
+## Docs
+
+See docs in [Github pages](https://thisago.github.io/gm_api/gm_api.html)
 
 ## TODO
 
