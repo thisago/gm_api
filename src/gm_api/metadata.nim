@@ -1,8 +1,10 @@
 #[
   Created at: 07/04/2021 13:35:37 Sunday
-  Modified at: 07/08/2021 03:30:05 PM Thursday
-]#
+  Modified at: 09/17/2021 01:14:29 AM Friday
 
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
 type
   GmPermitions* {.pure.} = enum
@@ -57,7 +59,7 @@ proc genMetadataBlock*(
   # project
   name: string;                                              ## Required *
   nameTranslations: openArray[(string, string)] = [];        ## Optional
-  namespace = "https://gitea.com/thisago/gm_api";                                   ## Optional
+  namespace = "https://github.com/thisago/gm_api";           ## Optional
   description = "New Nim userscript";                        ## Optional
   descriptionTranslations: openArray[(string, string)] = []; ## Optional
   version = "1.0.0";                                         ## Optional

@@ -1,6 +1,9 @@
 #[
   Created at: 07/04/2021 10:58:31 Sunday
-  Modified at: 07/08/2021 03:27:52 PM Thursday
+  Modified at: 09/17/2021 01:12:09 AM Friday
+
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
 ]#
 
 ##[
@@ -65,7 +68,7 @@ proc listValues*(gm: GmType): Future[seq[cstring]] {.async.}
 # # other
 proc notification(gm: GmType; data: JsObject)
 proc notification(gm: GmType; text: cstring; title, image = "".cstring;
-                   onclick: Callable = proc())
+                  onclick: Callable = proc())
   ## Opens a notification dialog.
 
 proc openInTab*(gm: GmType; url: cstring; openInBackground = false)

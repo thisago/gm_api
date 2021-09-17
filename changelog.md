@@ -1,9 +1,20 @@
 <!--
   Created at: 07/04/2021 13:25:27 Sunday
-  Modified at: 07/08/2021 03:32:27 PM Thursday
+  Modified at: 09/17/2021 01:15:27 AM Friday
+
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
 -->
 
 # Changelog
+
+## Version 0.2.2 (09/17/2021 01:15:22 Friday)
+
+- Changed comment header of all files
+- Fixed version in nimble file
+- added docs
+
+---
 
 ## Version 0.2.1 (07/08/2021 15:32:25 Thursday)
 

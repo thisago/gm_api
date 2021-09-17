@@ -1,6 +1,9 @@
 <!--
   Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 08/05/2021 01:37:42 PM Thursday
+  Modified at: 09/17/2021 01:15:59 AM Friday
+
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
 -->
 
 # GM_api
@@ -8,8 +11,6 @@
 Bindings to use GM api and create userscript headers on the fly
 
 ## See [changelog](changelog.md)
-
-Version 0.2.0
 
 Avaliable functions:
 
@@ -36,17 +37,21 @@ Please choice one installation method:
   ```
   or
   ```bash
-  nimble install https://gitea.com/thisago/gm_api
+  nimble install https://github.com/thisago/gm_api
   ```
 
 Or
 
 - Manually
   ```bash
-  git clone https://gitea.com/thisago/gm_api
+  git clone https://github.com/thisago/gm_api
   cd gm_api/
   nimble install
   ```
+
+## TODO
+
+- [ ] Change nimble url from gitea to github
 
 ## Projects using it
 
