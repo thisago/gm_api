@@ -1,12 +1,10 @@
-<!--
-  Created at: 07/04/2021 13:25:27 Sunday
-  Modified at: 09/17/2021 01:15:27 AM Friday
-
-        Copyright (C) 2021 Thiago Navarro
-  See file "license" for details about copyright
--->
-
 # Changelog
+
+## Version 0.2.3 (14/03/2023)
+
+- Fixed repo url
+
+---
 
 ## Version 0.2.2 (09/17/2021 01:15:22 Friday)
 

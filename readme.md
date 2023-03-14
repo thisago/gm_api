@@ -1,11 +1,3 @@
-<!--
-  Created at: 07/04/2021 13:24:16 Sunday
-  Modified at: 09/17/2021 01:17:45 AM Friday
-
-        Copyright (C) 2021 Thiago Navarro
-  See file "license" for details about copyright
--->
-
 # GM_api
 
 Bindings to use GM api and create userscript headers on the fly

@@ -1,11 +1,3 @@
-#[
-  Created at: 07/04/2021 10:58:31 Sunday
-  Modified at: 09/17/2021 01:12:09 AM Friday
-
-        Copyright (C) 2021 Thiago Navarro
-  See file "license" for details about copyright
-]#
-
 ##[
   Reference for violentmonkey: https://violentmonkey.github.io/api/gm/#gm_info
   Reference for greasymonkey api: https://wiki.greasespot.net/Greasemonkey_Manual:API
@@ -123,11 +115,9 @@ proc xmlHttpRequest*(gm: GmType; url, `method`: cstring;
 
   jsObj["headers"] = jsHeaders
 
-
   jsObj["overrideMimeType"] = overrideMimeType
   jsObj["user"] = user
   jsObj["password"] = password
-
 
   # events
   jsObj["onabort"] = onabort
