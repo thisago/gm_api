@@ -118,4 +118,4 @@ proc genMetadataBlock*(
   result = fmt"""// ==UserScript==
                {metadatas.join("\n")}
                // ==/UserScript==
-               // Metadata automatically generated with https://git.ozzuu.com/thisago/gm_api/""".unindent
+               // Metadata automatically generated with https://git.ozzuu.com/thisago/gm_api""".unindent

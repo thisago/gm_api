@@ -29,21 +29,17 @@ Please choice one installation method:
   ```
   or
   ```bash
-  nimble install https://github.com/thisago/gm_api
+  nimble install https://git.ozzuu.com/thisago/gm_api
   ```
 
 Or
 
 - Manually
   ```bash
-  git clone https://github.com/thisago/gm_api
+  git clone https://git.ozzuu.com/thisago/gm_api
   cd gm_api/
   nimble install
   ```
-
-## Docs
-
-See docs in [Github pages](https://thisago.github.io/gm_api/gm_api.html)
 
 ## TODO
 
@@ -51,7 +47,7 @@ See docs in [Github pages](https://thisago.github.io/gm_api/gm_api.html)
 
 ## Projects using it
 
-- [safeWriting](https://github.com/thisago/safeWriting)
+- [safeWriting](https://git.ozzuu.com/thisago/safeWriting)
 
 ## License
 
