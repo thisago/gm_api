@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.3.0 (10/04/2023)
+
+- Added `@updateURL` in metadata generator #1
+- Fixed example
+- Renamed the `GM` object to `Gm`
+
+---
+
 ## Version 0.2.3 (14/03/2023)
 
 - Fixed repo url

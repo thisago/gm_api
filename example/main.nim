@@ -1,11 +1,3 @@
-#[
-  Created at: 07/04/2021 11:12:25 Sunday
-  Modified at: 09/17/2021 01:07:50 AM Friday
-
-        Copyright (C) 2021 Thiago Navarro
-  See file "license" for details about copyright
-]#
-
 {.experimental: "codeReordering".}
 
 import jsconsole
@@ -31,24 +23,12 @@ when isMainModule:
       GmPermitions.setClipboard,
       GmPermitions.xmlHttpRequest,
     ],
-    require = [
-      # "https://arantius.com/misc/greasemonkey/imports/greasemonkey4-polyfill.js",
-    ],
-    resource = {
-      "avatar": "https://gitea.com/avatars/be2da4e8a9cbffdc433db9058105a1ce?size=112"
-    },
-    homepageUrl = "http://localhost/home",
-    supportUrl = "http://localhost/support",
+    homepageUrl = "https://example.com/home",
+    supportUrl = "https://example.com/support",
     version = "0.1.0",
     author = "Thisago",
     runAt = GmRunAt.docStart,
-    icon = "https://gitea.com/avatars/be2da4e8a9cbffdc433db9058105a1ce?size=112",
-    match = [
-      "*://localhost/*",
-    ],
-    `include` = [
-      "*://127.0.0.1/*",
-    ],
+    icon = "https://git.ozzuu.com/avatars/74711a273f7822e03d8802980c725d85?size=870",
     excludeMatch = [
       "*://duckduckgo/*",
       "*://bing/",
@@ -57,8 +37,6 @@ when isMainModule:
       "*://google/*",
       "*://bing/",
     ],
-    downloadUrl = "file:///data/os/dev/nim/lib/gm_api/example/main.js",
-
   )
   {.emit: metadataBlock.} # Use the metadatablock into js code
 
@@ -80,7 +58,7 @@ proc main {.async.} =
   # console.log GM.xmlHttpRequest()
   GM.notification("text", "title", onclick = (proc() =
     console.log("CLICK")
-    GM.openInTab("http://localhost", false)),
+    GM.openInTab("https://example.com", false)),
   ondone = (proc() =
     console.log("DONE")))
 
@@ -90,7 +68,7 @@ proc main {.async.} =
   await GM.setValue("a", "test")
   console.log(await GM.listValues())
 
-  GM.xmlHttpRequest("http://localhost/", "GET", onload = (proc(a: JsObject) =
+  GM.xmlHttpRequest("https://example.com", "GET", onload = (proc(a: JsObject) =
       console.log a),
     headers = {
       "referrer": "about:blank"

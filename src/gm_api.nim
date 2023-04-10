@@ -10,7 +10,7 @@ from std/jsffi import JsObject, `[]=`, newJsObject
 import jsconsole
 
 type
-  GmType = object
+  GmObj = object
   GmInfo* = object
     ## All data returned from `GM.info()`
     uuid*: cstring
@@ -34,52 +34,55 @@ type
     browserVersion*: cstring
     os*: GmInfoOs
 
+using
+  gm: GmObj
+
 type Callable = concept x
   x()
 
 # Gm object export
-let GM* {.importc, noDecl.}: GmType
+let Gm* {.importc: "GM", noDecl.}: GmObj
 
 # bindings
 {.push importcpp.}
-proc info*(gm: GmType): GmInfo
+proc info*(gm: GmObj): GmInfo
   ## NOT WORKING
   ## Exposes this information (plus a bit more) to the user script.
 
 # values
-proc getValue*(gm: GmType; key,
+proc getValue*(gm; key,
                defaultValue: cstring): Future[cstring] {.async.}
   ## Retrieves stored values, see GM.setValue below.
-proc setValue*(gm: GmType; key, value: cstring) {.async.}
+proc setValue*(gm; key, value: cstring) {.async.}
   ## Permanently stores a value under a key, later available via GM.getValue.
-proc deleteValue*(gm: GmType; key: cstring) {.async.}
+proc deleteValue*(gm; key: cstring) {.async.}
   ## Deletes a value from chrome that was previously set.
-proc listValues*(gm: GmType): Future[seq[cstring]] {.async.}
+proc listValues*(gm: GmObj): Future[seq[cstring]] {.async.}
   ## Retrieves an array of stored values' keys.
 
 # # other
-proc notification(gm: GmType; data: JsObject)
-proc notification(gm: GmType; text: cstring; title, image = "".cstring;
+proc notification(gm; data: JsObject)
+proc notification(gm; text: cstring; title, image = "".cstring;
                   onclick: Callable = proc())
   ## Opens a notification dialog.
 
-proc openInTab*(gm: GmType; url: cstring; openInBackground = false)
+proc openInTab*(gm; url: cstring; openInBackground = false)
   ## Opens a given URL in a new tab.
-proc registerMenuCommand*(gm: GmType; caption: cstring; commandFunc: Callable;
+proc registerMenuCommand*(gm; caption: cstring; commandFunc: Callable;
                           accessKey: cstring)
   ## Adds an item to the "User Script Commands" section of the Monkey Menu.
-proc setClipboard*(gm: GmType; text: cstring)
+proc setClipboard*(gm; text: cstring)
   ## Sets the contents of the clipboard.
-proc xmlHttpRequest(gm: GmType; details: JsObject)
+proc xmlHttpRequest(gm; details: JsObject)
 
 # proc addValueChangeListener*[T](
-#   gm: GmType; name: cstring;
+#   gm; name: cstring;
 #   callback: proc(name, oldValue, newValue: cstring; remote: bool): T
 # ) #[ {.hint: "Avaliable just for Violentmonkey".} ]#
 {.pop.}
 
 proc notification_placeholderCallback() = discard
-proc notification*(gm: GmType; text: cstring; title, image = "".cstring;
+proc notification*(gm; text: cstring; title, image = "".cstring;
                    onclick, ondone: Callable = notification_placeholderCallback) =
   ## Opens a notification dialog.
   var jsObj = newJsObject()
@@ -94,7 +97,7 @@ type GmHttpResponse = concept x
   x(newJsObject())
 
 proc xmlHttpRequest_placeholderCallback(x: JsObject) = discard
-proc xmlHttpRequest*(gm: GmType; url, `method`: cstring;
+proc xmlHttpRequest*(gm; url, `method`: cstring;
                      binary = false; context = newJsObject(); data = "".cstring;
                      headers: openArray[(string, string)] = [],
                      overrideMimeType, user, password = "".cstring;
