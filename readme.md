@@ -23,31 +23,14 @@ Avaliable functions:
 
 Please choice one installation method:
 
-- Automatically with nimble
-  ```bash
-  nimble install gm_api
-  ```
-  or
-  ```bash
-  nimble install https://git.ozzuu.com/thisago/gm_api
-  ```
-
-Or
-
-- Manually
-  ```bash
-  git clone https://git.ozzuu.com/thisago/gm_api
-  cd gm_api/
-  nimble install
-  ```
-
-## TODO
-
-- [ ] Change nimble url from gitea to github
+```bash
+nimble install gm_api
+```
 
 ## Projects using it
 
 - [safeWriting](https://git.ozzuu.com/thisago/safeWriting)
+- [toOzzuuBible](https://git.ozzuu.com/thisago/toOzzuuBible)
 
 ## License
 
