@@ -1,8 +1,3 @@
-##[
-  Reference for violentmonkey: https://violentmonkey.github.io/api/gm/#gm_info
-  Reference for greasymonkey api: https://wiki.greasespot.net/Greasemonkey_Manual:API
-]##
-
 import std/asyncjs
 from std/dom import nil
 from std/jsffi import JsObject, `[]=`, newJsObject
