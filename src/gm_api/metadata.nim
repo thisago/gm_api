@@ -62,7 +62,6 @@ proc genMetadataBlock*(
   supportUrl = "";                                           ## Optional
   homepageUrl = "";                                          ## Optional
 
-
   # matching
   match: openArray[string] = ["*://*/*"];                    ## Default matches everything
   excludeMatch: openArray[string] = [];                      ## Optional

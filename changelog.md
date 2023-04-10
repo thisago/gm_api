@@ -1,4 +1,10 @@
 # Changelog
+## Version 0.3.1 (10/04/2023)
+
+- Now the `Gm.getValue` default return are optional
+- Removed debug `console.log`
+
+---
 
 ## Version 0.3.0 (10/04/2023)
 

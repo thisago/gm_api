@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.3.0"
+version       = "0.3.1"
 author        = "Thiago Navarro"
 description   = "Bindings for Greasemonkey API and header generator"
 license       = "MIT"

@@ -7,8 +7,6 @@ import std/asyncjs
 from std/dom import nil
 from std/jsffi import JsObject, `[]=`, newJsObject
 
-import jsconsole
-
 type
   GmObj = object
   GmInfo* = object
@@ -50,8 +48,7 @@ proc info*(gm: GmObj): GmInfo
   ## Exposes this information (plus a bit more) to the user script.
 
 # values
-proc getValue*(gm; key,
-               defaultValue: cstring): Future[cstring] {.async.}
+proc getValue*(gm; key: cstring; default = cstring ""): Future[cstring] {.async.}
   ## Retrieves stored values, see GM.setValue below.
 proc setValue*(gm; key, value: cstring) {.async.}
   ## Permanently stores a value under a key, later available via GM.getValue.
@@ -129,12 +126,11 @@ proc xmlHttpRequest*(gm; url, `method`: cstring;
   jsObj["onprogress"] = onprogress
   jsObj["onreadystatechange"] = onreadystatechange
   jsObj["ontimeout"] = ontimeout
-  console.log(jsObj)
   GM.xmlHttpRequest(jsObj)
 
 var unsafeWindow* {.importc, noDecl.}: dom.Window
-  ## This object provides access to the raw JavaScript window scope of the content page. It is most commonly used to access JavaScript variables on the page.
-# hint: "This command can open certain security holes in your user script, and it is recommended to use this command sparingly."
+  ## This object provides access to the raw JavaScript window scope of the content page. It is most commonly used to access JavaScript variables on the page.  
+  ## hint: "This command can open certain security holes in your user script, and it is recommended to use this command sparingly."
 
 # Metadata block
 import ./gm_api/metadata
