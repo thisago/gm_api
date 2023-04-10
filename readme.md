@@ -1,6 +1,6 @@
-# GM_api
+# gm_api
 
-Bindings to use GM api and create userscript headers on the fly
+Bindings to use Gm api and create userscript headers on the fly
 
 ## See [changelog](changelog.md)
 
@@ -8,16 +8,16 @@ Avaliable functions:
 
 - genMetadataBlock
 
-- GM.info - Not working to me
-- GM.getValue
-- GM.setValue
-- GM.deleteValue
-- GM.listValues
-- GM.notification
-- GM.openInTab
-- GM.registerMenuCommand
-- GM.setClipboard
-- GM.xmlHttpRequest
+- Gm.info - Not working to me
+- Gm.getValue
+- Gm.setValue
+- Gm.deleteValue
+- Gm.listValues
+- Gm.notification
+- Gm.openInTab
+- Gm.registerMenuCommand
+- Gm.setClipboard
+- Gm.xmlHttpRequest
 
 ## Installation
 
